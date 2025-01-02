@@ -5,9 +5,9 @@ from label import Label
 
 from sine import sine
 
-play_btn_sheet = pygame.image.load("assets/images/btn_2.png")
+play_btn_sheet = pygame.image.load("../assets/images/btn_2.png")
 
-control_btn_sheet = pygame.image.load("assets/images/btn_6.png")
+control_btn_sheet = pygame.image.load("../assets/images/btn_6.png")
 
 play_text = Label("PLAY", "!", (10, 10, 10), 40)
 

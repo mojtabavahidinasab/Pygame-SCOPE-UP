@@ -7,9 +7,9 @@ class Scope:
         self.speed = speed
         self.width, self.height = 48, 48
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
-        self.img = pygame.transform.scale(pygame.image.load("assets/images/target.png"), (48, 48))
+        self.img = pygame.transform.scale(pygame.image.load("../assets/images/target.png"), (48, 48))
         self.moving = False
-        self.scope_sound = pygame.mixer.Sound("assets/sounds/scope-moving.mp3")
+        self.scope_sound = pygame.mixer.Sound("../assets/sounds/scope-moving.mp3")
         self.visible = True
 
     def draw(self, win):

@@ -44,15 +44,15 @@ class Main:
         self.time_since_enemy_generation = pygame.time.get_ticks()
         self.screen_shake = 0
         self.offset = [0, 0]
-        self.hit_sound = pygame.mixer.Sound("assets/sounds/hit.mp3")
+        self.hit_sound = pygame.mixer.Sound("../assets/sounds/hit.mp3")
         self.time_difference = 5000
-        self.enemy_one_img = pygame.image.load("assets/images/enemy_1.png").convert_alpha()
-        self.enemy_two_img = pygame.image.load("assets/images/enemy_2.png").convert_alpha()
-        self.enemy_three_img = pygame.image.load("assets/images/enemy_3.png").convert_alpha()
+        self.enemy_one_img = pygame.image.load("../assets/images/enemy_1.png").convert_alpha()
+        self.enemy_two_img = pygame.image.load("../assets/images/enemy_2.png").convert_alpha()
+        self.enemy_three_img = pygame.image.load("../assets/images/enemy_3.png").convert_alpha()
         self.score = 0
         self.kills = 0
         self.pos = pygame.mouse.get_pos()
-        self.play_btn_img = pygame.image.load("assets/images/btn_1.png").convert_alpha()
+        self.play_btn_img = pygame.image.load("../assets/images/btn_1.png").convert_alpha()
         self.kill_label = Label("", self.kills, (50, 50, 50), 40)
         self.sine_speed = 200.0
         self.sine_range = 10.0
@@ -66,8 +66,8 @@ class Main:
         self.revive_condition = False
         self.kill_count_for_nuke = 0
         self.controls = False
-        self.explosion = pygame.mixer.Sound("assets/sounds/explosion.mp3")
-        self.reload = pygame.mixer.Sound("assets/sounds/reload.mp3")
+        self.explosion = pygame.mixer.Sound("../assets/sounds/explosion.mp3")
+        self.reload = pygame.mixer.Sound("../assets/sounds/reload.mp3")
 
     def grid(self, surface):
         for i in range((self.grid_width//self.block_size) + 1):
@@ -188,7 +188,7 @@ class Main:
 
         last_update = pygame.time.get_ticks()
 
-        back_btn = Button(20, sine(self.sine_speed, 1280, self.sine_range, 670), pygame.image.load("assets/images/btn_5.png"))
+        back_btn = Button(20, sine(self.sine_speed, 1280, self.sine_range, 670), pygame.image.load("../assets/images/btn_5.png"))
 
         back_label = Label("BACK", "", (10, 10, 10), 40)
         control_label = Label("Controls", "!", (10, 10, 10), 40)

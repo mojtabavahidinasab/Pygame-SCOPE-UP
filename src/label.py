@@ -6,7 +6,7 @@ class Label:
         self.value = value
         self.text_color = color
         self.size = size
-        self.font = pygame.font.Font("assets/fonts/karmatic.ttf", self.size)
+        self.font = pygame.font.Font("../assets/fonts/karmatic.ttf", self.size)
 
     def render(self, win, pos):
         text_surface = self.font.render(f"{self.text}{self.value}", True, self.text_color)
